@@ -1,0 +1,21 @@
+[project]
+name = "base-agentkit-gasless-usdc"
+version = "0.1.0"
+description = "Python SDK extension for Base USDC gasless transfers using EIP-3009 and ERC-4337"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "web3>=6.15.0",
+    "eth-account>=0.11.0",
+    "pydantic>=2.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
